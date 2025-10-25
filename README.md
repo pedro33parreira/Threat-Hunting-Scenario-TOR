@@ -120,29 +120,29 @@ File identified: tor-browser-windows-x86_64-portable-14.5.8.exe in
 Additional TOR-related files were copied to the user’s desktop, including tor-shopping-list.txt, suggesting user interaction after download.
 
 
-SHA256: 42175e455f814e5a691195c92df92695f68bca451af53ae405d7a5129898ad89
+# SHA256: 42175e455f814e5a691195c92df92695f68bca451af53ae405d7a5129898ad89
 
 
-User: lokiid
+# User: lokiid
 
 
-Interpretation: Initial download and file manipulation of the TOR installer and related text artifacts, indicating possible intent to use or document TOR-based browsing.
+# Interpretation: Initial download and file manipulation of the TOR installer and related text artifacts, indicating possible intent to use or document TOR-based browsing.
 
 10:21:43 AM – File Download / Rename
 A file named tor-browser-windows-x86_64-portable-14.5.8.exe was detected in
  C:\Users\Lokiid\Downloads\.
 
 
-Action: FileRenamed (likely from browser temporary file to final filename).
+# Action: FileRenamed (likely from browser temporary file to final filename).
 
 
-User: Lokiid
+# User: Lokiid
 
 
-SHA256: 42175e455f814e5a691195c92df92695f68bca451af53ae405d7a5129898ad89
+# SHA256: 42175e455f814e5a691195c92df92695f68bca451af53ae405d7a5129898ad89
 
 
-Interpretation: The user “Lokiid” downloaded the Tor Browser installer, beginning the unauthorized installation process.
+# Interpretation: The user “Lokiid” downloaded the Tor Browser installer, beginning the unauthorized installation process.
 
 
 
@@ -150,19 +150,19 @@ Interpretation: The user “Lokiid” downloaded the Tor Browser installer, begi
 A process creation event shows Tor Browser installer execution by the user “Lokiid”.
 
 
-File executed: tor-browser-windows-x86_64-portable-14.5.8.exe
+# File executed: tor-browser-windows-x86_64-portable-14.5.8.exe
 
 
-Path: C:\Users\Lokiid\Downloads\
+# Path: C:\Users\Lokiid\Downloads\
 
 
-Command line: "tor-browser-windows-x86_64-portable-14.5.8.exe" /S
+# Command line: "tor-browser-windows-x86_64-portable-14.5.8.exe" /S
 
 
-Action type: ProcessCreated
+# Action type: ProcessCreated
 
 
-Interpretation: The /S switch indicates a silent installation, likely without user prompts.
+# Interpretation: The /S switch indicates a silent installation, likely without user prompts.
 
 
 
@@ -173,12 +173,12 @@ A second process event confirms that the installer continued running.
 Same executable and hash as before.
 
 
-Interpretation: Indicates unpacking and deploying Tor Browser components to a destination folder.
+# Interpretation: Indicates unpacking and deploying Tor Browser components to a destination folder.
 
 
 
 10:28:14–10:28:26 AM – File Creation Events (Installation Output)
-Multiple new files were created under
+# Multiple new files were created under
  C:\Users\Lokiid\Desktop\Tor Browser\Browser\TorBrowser\Tor\, including:
 tor.txt
 
@@ -195,38 +195,38 @@ tor.exe
 A desktop shortcut Tor Browser.lnk
 
 
-Interpretation: These artifacts confirm that the installation completed successfully and that Tor Browser was deployed to the “Lokiid” user’s desktop.
+# Interpretation: These artifacts confirm that the installation completed successfully and that Tor Browser was deployed to the “Lokiid” user’s desktop.
 
 10:28:29 AM – Tor Browser Launched
-Process created: firefox.exe
+# Process created: firefox.exe
 
 
-Location: C:\Users\Lokiid\Desktop\Tor Browser\Browser\firefox.exe
+# Location: C:\Users\Lokiid\Desktop\Tor Browser\Browser\firefox.exe
 
 
-Action: ProcessCreated
+# Action: ProcessCreated
 
 
-Interpretation: This is the actual launch of the Tor Browser GUI, which uses a modified Firefox binary.
+# Interpretation: This is the actual launch of the Tor Browser GUI, which uses a modified Firefox binary.
 
 
 
 10:28:46 AM – Outgoing Network Connection Established
 (Event described in your threat hunt narrative — data confirmed from network query)
-Process: tor.exe
-Path: C:\Users\Lokiid\Desktop\Tor Browser\Browser\TorBrowser\Tor\tor.exe
+# Process: tor.exe
+# Path: C:\Users\Lokiid\Desktop\Tor Browser\Browser\TorBrowser\Tor\tor.exe
 
 
-Remote IP: 80.239.189.84
+# Remote IP: 80.239.189.84
 
 
-Remote Port: 9001 (a known Tor relay port)
+# Remote Port: 9001 (a known Tor relay port)
 
 
-Action type: ConnectionSuccess (inferred)
+# Action type: ConnectionSuccess (inferred)
 
 
-Interpretation: The Tor service successfully connected to a known Tor node, confirming active use of the Tor network by the user “Lokiid”.
+# Interpretation: The Tor service successfully connected to a known Tor node, confirming active use of the Tor network by the user “Lokiid”.
 
 
 Additional connections were made over port 443, consistent with encrypted HTTPS traffic through Tor relays.
@@ -238,7 +238,7 @@ Additional connections were made over port 443, consistent with encrypted HTTPS 
 
 This sequence clearly demonstrates unauthorized installation and use of the Tor Browser by the user “Lokiid” on the system “test-defender.” The activity bypassed normal network visibility and introduced encrypted outbound traffic to external Tor nodes.
 
-#Recommended Actions:
+# Recommended Actions:
 
 Immediately notify management of confirmed TOR activity.
 
