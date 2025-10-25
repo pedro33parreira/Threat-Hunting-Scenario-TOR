@@ -124,74 +124,74 @@ Additional TOR-related files were copied to the user’s desktop, including tor-
 42175e455f814e5a691195c92df92695f68bca451af53ae405d7a5129898ad89
 
 
-# User: 
+## User: 
 lokiid
 
 
-# Interpretation: 
+## Interpretation: 
 Initial download and file manipulation of the TOR installer and related text artifacts, indicating possible intent to use or document TOR-based browsing.
 
-10:21:43 AM – File Download / Rename
+# 10:21:43 AM – File Download / Rename
 A file named tor-browser-windows-x86_64-portable-14.5.8.exe was detected in
  C:\Users\Lokiid\Downloads\.
 
 
-# Action:
+## Action:
 FileRenamed (likely from browser temporary file to final filename).
 
 
-# User:
+## User:
 Lokiid
 
 
-# SHA256:
+## SHA256:
 42175e455f814e5a691195c92df92695f68bca451af53ae405d7a5129898ad89
 
 
-# Interpretation:
+## Interpretation:
 The user “Lokiid” downloaded the Tor Browser installer, beginning the unauthorized installation process.
 
 
 
-10:27:10 AM – Process Execution (Silent Install Initiated)
+# 10:27:10 AM – Process Execution (Silent Install Initiated)
 A process creation event shows Tor Browser installer execution by the user “Lokiid”.
 
 
-# File executed:
+## File executed:
 tor-browser-windows-x86_64-portable-14.5.8.exe
 
 
-# Path:
+## Path:
 C:\Users\Lokiid\Downloads\
 
 
-# Command line:
+## Command line:
 "tor-browser-windows-x86_64-portable-14.5.8.exe" /S
 
 
-# Action type:
+## Action type:
 ProcessCreated
 
 
-# Interpretation:
+## Interpretation:
 The /S switch indicates a silent installation, likely without user prompts.
 
 
 
-10:27:55 AM – Process Creation (Installation Continues)
+# 10:27:55 AM – Process Creation (Installation Continues)
 A second process event confirms that the installer continued running.
 
 
 Same executable and hash as before.
 
 
-# Interpretation:
+## Interpretation:
 Indicates unpacking and deploying Tor Browser components to a destination folder.
 
 
 
-10:28:14–10:28:26 AM – File Creation Events (Installation Output)
-# Multiple new files were created under
+# 10:28:14–10:28:26 AM – File Creation Events (Installation Output)
+## Multiple new files were created under
  C:\Users\Lokiid\Desktop\Tor Browser\Browser\TorBrowser\Tor\, including:
 
 tor.txt
@@ -209,48 +209,48 @@ tor.exe
 A desktop shortcut Tor Browser.lnk
 
 
-# Interpretation:
+## Interpretation:
 These artifacts confirm that the installation completed successfully and that Tor Browser was deployed to the “Lokiid” user’s desktop.
 
-10:28:29 AM – Tor Browser Launched
-# Process created:
+#10:28:29 AM – Tor Browser Launched
+## Process created:
 firefox.exe
 
 
-# Location:
+## Location:
 C:\Users\Lokiid\Desktop\Tor Browser\Browser\firefox.exe
 
 
-# Action:
+## Action:
 ProcessCreated
 
 
-# Interpretation:
+## Interpretation:
 This is the actual launch of the Tor Browser GUI, which uses a modified Firefox binary.
 
 
 
-10:28:46 AM – Outgoing Network Connection Established
+# 10:28:46 AM – Outgoing Network Connection Established
 (Event described in your threat hunt narrative — data confirmed from network query)
-# Process:
+## Process:
 tor.exe
-# Path:
+## Path:
 C:\Users\Lokiid\Desktop\Tor Browser\Browser\TorBrowser\Tor\tor.exe
 
 
-# Remote IP:
+## Remote IP:
 80.239.189.84
 
 
-# Remote Port:
+## Remote Port:
 9001 (a known Tor relay port)
 
 
-# Action type:
+## Action type:
 ConnectionSuccess (inferred)
 
 
-# Interpretation:
+## Interpretation:
 The Tor service successfully connected to a known Tor node, confirming active use of the Tor network by the user “Lokiid”.
 
 
@@ -263,7 +263,7 @@ Additional connections were made over port 443, consistent with encrypted HTTPS 
 
 This sequence clearly demonstrates unauthorized installation and use of the Tor Browser by the user “Lokiid” on the system “test-defender.” The activity bypassed normal network visibility and introduced encrypted outbound traffic to external Tor nodes.
 
-# Recommended Actions:
+## Recommended Actions:
 
 Immediately notify management of confirmed TOR activity.
 
