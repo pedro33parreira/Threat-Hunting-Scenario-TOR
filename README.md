@@ -238,7 +238,7 @@ Additional connections were made over port 443, consistent with encrypted HTTPS 
 
 This sequence clearly demonstrates unauthorized installation and use of the Tor Browser by the user “Lokiid” on the system “test-defender.” The activity bypassed normal network visibility and introduced encrypted outbound traffic to external Tor nodes.
 
-Recommended Actions:
+#Recommended Actions:
 
 Immediately notify management of confirmed TOR activity.
 
