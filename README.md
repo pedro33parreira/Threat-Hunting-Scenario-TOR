@@ -108,19 +108,19 @@ DeviceNetworkEvents
 ---
 
 Chronological Events\
-08:21:43 AM (UTC) – File Discovery / Download Begins
+# 08:21:43 AM (UTC) – File Discovery / Download Begins
 Table Queried: DeviceFileEvents
 Analyst located multiple file events containing “tor”.
 
 
-File identified: tor-browser-windows-x86_64-portable-14.5.8.exe in
+#File identified: tor-browser-windows-x86_64-portable-14.5.8.exe in
  C:\Users\Lokiid\Downloads\.
 
 
 Additional TOR-related files were copied to the user’s desktop, including tor-shopping-list.txt, suggesting user interaction after download.
 
 
-# SHA256: 
+## SHA256: 
 42175e455f814e5a691195c92df92695f68bca451af53ae405d7a5129898ad89
 
 
